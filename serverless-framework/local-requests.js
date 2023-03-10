@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const API = 'https://5idt37x11a.execute-api.us-east-1.amazonaws.com/';
+const API = process.env.API;
 
 const DUMMY_POST_DATA = {
   name: 'Thomas AWS Test',
