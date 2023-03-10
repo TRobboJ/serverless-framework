@@ -8,8 +8,7 @@ const DUMMY_POST_DATA = {
 };
 
 const processRequest = async () => {
-  const requestData = JSON.stringify(DUMMY_POST_DATA);
-  const response = await axios.post(API, { requestData });
+  const response = await axios.post(API, { DUMMY_POST_DATA });
   console.log(response.data);
 };
 
